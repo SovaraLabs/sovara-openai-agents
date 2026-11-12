@@ -1,0 +1,15 @@
+[project]
+name = "sovara-examples-openai-agents"
+version = "0.1.0"
+description = "Sovara debug examples for the OpenAI Agents SDK"
+requires-python = ">=3.10"
+dependencies = [
+    "sovara",
+    "sovara-openai-agents",
+    "openai-agents",
+    "mcp",
+]
+
+[tool.uv.sources]
+sovara = { path = "../../../sovara/packages/python-sdk", editable = true }
+sovara-openai-agents = { path = "../../python", editable = true }
