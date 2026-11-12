@@ -3,7 +3,7 @@
 Record OpenAI Agents tool calls in Sovara traces.
 
 ```bash
-pip install sovara-openai-agents
+uv add sovara-openai-agents
 ```
 
 ```python

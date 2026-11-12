@@ -4,7 +4,7 @@ Record OpenAI Agents tool calls in Sovara traces.
 
 | Package | Install | Docs |
 | --- | --- | --- |
-| [`python/`](python) | `pip install sovara-openai-agents` | [README](python/README.md) |
+| [`python/`](python) | `uv add sovara-openai-agents` | [README](python/README.md) |
 | [`typescript/`](typescript) | `npm install @sovara/openai-agents @sovara/sdk` | [README](typescript/README.md) |
 
 Runnable examples are in [`examples/`](examples).
