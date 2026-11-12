@@ -19,10 +19,6 @@ Call both once at startup, before creating agents. Inside a Sovara trace, functi
 recorded as tool steps and agent tools (`agent.as_tool()`) open a child trace with their input
 and output. Outside a trace, tools run unrecorded. Requires `openai-agents` 0.13+.
 
-## Development
-
-See [Development](https://github.com/SovaraLabs/sovara-openai-agents#development).
-
 ## License
 
 MIT.

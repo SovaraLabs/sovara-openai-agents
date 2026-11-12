@@ -18,10 +18,6 @@ Await both once at startup, before creating agents. Inside a Sovara trace, funct
 recorded as tool steps; outside one they run unrecorded. Requires Node.js 24.22.1+,
 `@openai/agents`.
 
-## Development
-
-See [Development](https://github.com/SovaraLabs/sovara-openai-agents#development).
-
 ## License
 
 MIT.
