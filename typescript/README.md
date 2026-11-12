@@ -16,7 +16,7 @@ await instrumentOpenAIAgents(); // function tools as tool steps
 
 Await both once at startup, before creating agents. Inside a Sovara trace, function tools are
 recorded as tool steps; outside one they run unrecorded. Requires Node.js 24.22.1+,
-`@openai/agents` and an exec server with runner-api 6.
+`@openai/agents`.
 
 ## Development
 
