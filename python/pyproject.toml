@@ -10,13 +10,13 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
-    "sovara",
+    "sovara>=0.10,<0.11",
     # Function-tool capture needs 0.13+. Tested with 0.13.6; see the dev group.
-    "openai-agents",
+    "openai-agents>=0.13.6,<0.14",
 ]
 
 [project.urls]
-Documentation = "https://docs.sovara-labs.com/sdks/integrations"
+Documentation = "https://docs.sovara-labs.com/integrations/openai-agents"
 Repository = "https://github.com/SovaraLabs/sovara-openai-agents/tree/main/python"
 
 [tool.setuptools]
@@ -34,10 +34,6 @@ dev = [
     "openai==2.30.0",
     "openai-agents==0.13.6",
 ]
-
-[tool.uv.sources]
-# Development uses a sovara checkout next to this repository.
-sovara = { path = "../../sovara/packages/python-sdk", editable = true }
 
 [tool.ruff]
 line-length = 100
