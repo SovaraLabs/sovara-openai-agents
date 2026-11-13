@@ -11,7 +11,7 @@ uv sync
 uv run python project_analyst.py
 ```
 
-TypeScript, from `examples/typescript`, after building the SDK and the package:
+TypeScript, from `examples/typescript`, after building the integration package:
 
 ```sh
 npm install
