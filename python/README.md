@@ -1,6 +1,11 @@
 # Sovara for the OpenAI Agents SDK (Python)
 
-Record OpenAI Agents tool calls in Sovara traces.
+Sovara helps teams manage domain knowledge and put it to work in AI agents.
+Capture business rules, expert guidance, and lessons from experience in a shared
+knowledge base. Deliver relevant knowledge to agents as they work, review how
+they use it, and improve it together.
+
+Connect OpenAI Agents to Sovara to review agent runs and apply your team's domain knowledge.
 
 ```bash
 uv add sovara-openai-agents
@@ -11,13 +16,18 @@ uv add sovara-openai-agents
 import sovara
 import sovara_openai_agents
 
-sovara.auto_instrument()  # model calls, through the HTTP client
-sovara_openai_agents.instrument()  # function tools as tool steps, agent tools as child traces
+sovara.auto_instrument()
+sovara_openai_agents.instrument()
 ```
 
-Call both once at startup, before creating agents. Inside a Sovara trace, function tools are
-recorded as tool steps and agent tools (`agent.as_tool()`) open a child trace with their input
-and output. Outside a trace, tools run unrecorded. Requires `openai-agents` 0.13.6 (the supported 0.13 series).
+Initialize both integrations once, before creating agents, and run your agent
+inside a [Sovara trace](https://docs.sovara-labs.com/sdks/python/quickstart).
+This package records tool calls; the Sovara SDK records supported model calls
+and applies lessons when [knowledge injection](https://docs.sovara-labs.com/sovaradb/auto-injection)
+is enabled. Calls outside a trace are not recorded.
+
+Requires `openai-agents` 0.13.6 (the supported 0.13 series). See the
+[integration guide](https://docs.sovara-labs.com/integrations/openai-agents).
 
 ## License
 
