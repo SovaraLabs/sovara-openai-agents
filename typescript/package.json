@@ -1,7 +1,7 @@
 {
   "name": "@sovara/openai-agents",
-  "version": "0.1.1",
-  "description": "Sovara recording for the OpenAI Agents SDK",
+  "version": "0.1.2",
+  "description": "Connect OpenAI Agents to Sovara to review agent runs and apply your team's domain knowledge.",
   "type": "module",
   "license": "MIT",
   "repository": {

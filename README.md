@@ -1,6 +1,11 @@
 # Sovara for the OpenAI Agents SDK
 
-Record OpenAI Agents tool calls in Sovara traces.
+Sovara helps teams manage domain knowledge and put it to work in AI agents.
+Capture business rules, expert guidance, and lessons from experience in a shared
+knowledge base. Deliver relevant knowledge to agents as they work, review how
+they use it, and improve it together.
+
+Connect OpenAI Agents to Sovara to review agent runs and apply your team's domain knowledge.
 
 | Package | Install | Docs |
 | --- | --- | --- |
